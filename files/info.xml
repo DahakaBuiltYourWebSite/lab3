@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVProgramDirector>
+    <TVProgramNews>
+        Name = "News" duration = 30, isHypersensitive = false
+    </TVProgramNews>
+
+    <TVProgramMovie>
+        Name = "Movie" duration = 120 isHypersensitive = false
+    </TVProgramMovie>
+
+    <TVProgramCartoon>
+        Name = "Cartoon" duration = 60 isHypersensitive = true
+    </TVProgramCartoon>
+
+    <TVProgramAdvertisement>
+        Name = "Advertisement" duration = 15 isHypersensitive = false
+    </TVProgramAdvertisement>
+</TVProgramDirector>
