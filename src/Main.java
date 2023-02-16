@@ -1,7 +1,16 @@
-public class Main {
-    public static void main(String[] args) {
-        TVProgramDirector director = new TVProgramDirector();
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
+public class Main {
+    static{
+        new DOMConfigurator().doConfigure("log/log4j.xml",
+                LogManager.getLoggerRepository());
+    }
+    private static final Logger LOG = Logger.getLogger(Main.class);
+    public static void main(String[] args) {
+        LOG.info("Starting program_");
+        TVProgramDirector director = new TVProgramDirector();
         director.addProgram(new TVProgram("News", 30, false));
         director.addProgram(new TVProgram("Movie", 120, false));
         director.addProgram(new TVProgram("Cartoon", 60, true));
